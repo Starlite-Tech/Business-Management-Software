@@ -20,7 +20,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .with_size(600, 400)
         .center_screen()
         .with_label("Starlite Business");
-
+    sidebar::create(&mut wind, account::AccountType::ADMIN);
 
     wind.make_resizable(true);
     wind.set_color(Color::White);
